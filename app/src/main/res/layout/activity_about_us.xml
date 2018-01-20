@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_colour"
+    tools:context="in.ac.iittp.solarx.aboutUs">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/about_us" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Join Us here"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="facebook"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:onClick="youtube"
+            android:src="@drawable/youtube"/>
+        <ImageView
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:onClick="linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linkedin"/>
+        <ImageView
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:onClick="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/web"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_gravity="fill_vertical"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="IIT Tirupati or its student do not assume any responsibility in any manner whatsoever regarding the corrrectness of the data and its usage. The data is made availaible to use on as-is basis."/>
+
+</LinearLayout>

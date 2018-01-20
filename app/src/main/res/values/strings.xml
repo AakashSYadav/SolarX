@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SolarX</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Version 1.O</string>
+    <string name="main_text">There is an urgent need to stop subsidizing the fossil fuel industry, dramatically reduce wasted energy, and significantly shift our power supplies from oil, coal, and natural gas to wind, solar, geothermal, and other renewable energy sources.
+</string>
+    <string name="about_us">App designed and developed by
+        \n\nStudents \nIndian Institute of TechnologyTirupati – Renigunta Road,
+Settipalli Post,
+Tirupati – 517 506,
+Chittoor District, A.P.</string>
+</resources>
