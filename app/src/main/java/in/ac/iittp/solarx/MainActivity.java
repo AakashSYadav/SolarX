@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             Intent intent = new Intent(this, addData.class);
-            startActivity(intent);        } else if (id == R.id.nav_gallery) {
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
             Intent intent = new Intent(this, SearchData.class);
             startActivity(intent);
