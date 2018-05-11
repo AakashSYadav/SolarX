@@ -15,34 +15,15 @@
         android:padding="16dp"
         android:text="@string/about_us" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Join Us here"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Join Us here"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:padding="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="facebook"
-            android:src="@drawable/facebook"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:onClick="youtube"
-            android:src="@drawable/youtube"/>
-        <ImageView
-            android:paddingTop="16dp"
-            android:paddingLeft="16dp"
-            android:onClick="linkedin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/linkedin"/>
         <ImageView
             android:paddingTop="16dp"
             android:paddingLeft="16dp"
@@ -50,14 +31,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/web"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:onClick="youtube"
+            android:src="@drawable/youtube"/>
+        <ImageView
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="facebook"
+            android:src="@drawable/facebook"/>
+
+        <!--<ImageView-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:onClick="linkedin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/linkedin"/>-->
+
     </LinearLayout>
     <TextView
-        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Declaration"
+        android:layout_marginTop="110dp"
+
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:padding="8dp"
         android:layout_gravity="fill_vertical"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="10sp"
-        android:text="IIT Tirupati or its student do not assume any responsibility in any manner whatsoever regarding the corrrectness of the data and its usage. The data is made availaible to use on as-is basis."/>
+        android:text="IIT Tirupati and the development team do not assume any responsibility whatsoever regarding the veracity of the data and the terms governing its usage. The data is meant to be used at the user's own risk."/>
 
 </LinearLayout>

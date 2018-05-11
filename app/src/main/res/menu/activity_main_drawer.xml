@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_action_search"
-            android:title="Search Data" />
+            android:title="Get Data" />
 
     </group>
 
@@ -24,7 +24,7 @@
             <item
                 android:id="@+id/nav_manage"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Suggestions" />
+                android:title="Feedback" />
 
         </menu>
     </item>

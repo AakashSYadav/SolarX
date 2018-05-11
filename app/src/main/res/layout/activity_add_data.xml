@@ -1,105 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background_colour"
+    android:orientation="vertical"
     tools:context="in.ac.iittp.solarx.addData">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Information Collected"
-        android:layout_gravity="center_horizontal"
-        android:padding="16dp"
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Solar radiation management"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:padding="16dp"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="20dp"-->
+    <!--android:textStyle="bold"/>-->
     <TextView
         android:id="@+id/LIGHT_available"
         android:layout_width="fill_parent"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:background="@color/yellow500"
+        android:orientation="horizontal"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Solar Radience :"
-            android:textSize="16dp"
+            android:layout_height="wrap_content"
             android:padding="8dp"
+            android:text="Solar irRadiance :"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold|normal" />
 
-            android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/LIGHT_reading"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity=""
+            android:padding="8dp"
             android:text="0"
-            android:layout_gravity="center_horizontal"
-            android:padding="8dp"
-            android:textSize="16dp"/>
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Latitude :"
-            android:textSize="16dp"
-            android:padding="8dp"
-
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/lat"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="0.0"
-            android:textSize="16dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Longitude :"
-            android:textSize="16dp"
-            android:padding="8dp"
-
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/lon"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="8dp"
-            android:text="0.0"
-            android:textSize="16dp"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/yellow500"
         android:orientation="horizontal"
+
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Latitude :"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/txtLat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="0.0"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/yellow500"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Longitude :"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/txtLon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="0.0"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/yellow500"
+        android:orientation="horizontal"
+        android:padding="20dp"
         android:paddingBottom="32dp">
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Device Model :"
-            android:textSize="16dp"
+            android:layout_height="wrap_content"
             android:padding="8dp"
+            android:text="Device :"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
 
-            android:layout_height="wrap_content" />
+            android:textStyle="bold|normal" />
+
         <TextView
             android:id="@+id/devid"
             android:layout_width="fill_parent"
@@ -107,20 +146,29 @@
             android:layout_gravity="center_horizontal"
             android:padding="8dp"
             android:text="Unknown"
+            android:textColor="@android:color/black"
             android:textSize="16dp"
-            />
+            android:textStyle="bold" />
     </LinearLayout>
+
     <CheckBox
-        android:layout_marginLeft="8dp"
+        android:id="@+id/chkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I agree to share the above data anonymously"
-        />
+        android:layout_marginLeft="8dp"
+        android:onClick="chkbox"
+        android:text="I agree to share the above data anonymously" />
 
     <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"/>
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>

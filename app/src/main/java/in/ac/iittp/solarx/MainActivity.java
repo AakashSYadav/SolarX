@@ -19,6 +19,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -32,15 +34,15 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                shareApplication();
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                shareApplication();
+////                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+////                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -50,8 +52,24 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
+
+    public void adbtn(View view){
+        Intent intent = new Intent(this, addData.class);
+        startActivity(intent);
+    }
+
+    public void getBtn(View view){
+        Intent intent = new Intent(this, SearchData.class);
+        startActivity(intent);
+    }
+
+    public void txtAdd(View view){
+        Toast.makeText(getApplication(), "Data Added from Hardware!",
+                Toast.LENGTH_LONG).show();
+    }
 
 
     @Override
@@ -121,14 +139,14 @@ public class MainActivity extends AppCompatActivity
                 .show();
 
     }
-
-    private void shareApplication() {
-        ApplicationInfo app = getApplicationContext().getApplicationInfo();
-        String filePath = app.sourceDir;
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("*/*");
-        // Append file and send Intent
-        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filePath)));
-        startActivity(Intent.createChooser(intent, "Share app via"));
-    }
+//
+//    private void shareApplication() {
+//        ApplicationInfo app = getApplicationContext().getApplicationInfo();
+//        String filePath = app.sourceDir;
+//        Intent intent = new Intent(Intent.ACTION_SEND);
+//        intent.setType("*/*");
+//        // Append file and send Intent
+//        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filePath)));
+//        startActivity(Intent.createChooser(intent, "Share app via"));
+//    }
 }
