@@ -1,4 +1,4 @@
-# povDisplay
+# SolarX
 ***
 
   - The main idea is to use the light sensor and to get trusted results, this is needed to calibrate the app i.e the data of the sensor by comparing it with present methods to arrive at an algorithm. 
